@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 class CustomButton extends StatelessWidget {
-  CustomButton({
+  const CustomButton({
     super.key,
     this.text,
     this.color,
@@ -20,7 +20,7 @@ class CustomButton extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return InkWell(
-      onTap: () => onPressed,
+      onTap: onPressed,
       child: Container(
         height: heigth,
         width: width,

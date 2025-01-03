@@ -21,8 +21,10 @@ class _WelcomScreenState extends State<WelcomScreen> {
       body: Stack(
         children: [
           PageView(
-            children: [
-              PageViwe1(),
+            children: const [
+              PageViwe1(
+                
+              ),
               PageView2(),
               PageView3(),
               PageView4(),

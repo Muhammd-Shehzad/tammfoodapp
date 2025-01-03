@@ -7,10 +7,10 @@ import 'package:get/get.dart';
 void main() {
   runApp(
     ScreenUtilInit(
-      designSize: Size(360, 690),
+      designSize: const Size(360, 690),
       splitScreenMode: true,
       minTextAdapt: true,
-      builder: (context, child) => GetMaterialApp(
+      builder: (context, child) => const GetMaterialApp(
         home: WelcomScreen(),
         // SignIn()
       ),

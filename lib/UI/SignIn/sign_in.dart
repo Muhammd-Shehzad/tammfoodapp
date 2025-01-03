@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:foodapp/CustomWidget/custom_button.dart';
 import 'package:foodapp/CustomWidget/custom_text_field.dart';
-import 'package:foodapp/main.dart';
 
 class SignIn extends StatefulWidget {
   const SignIn({super.key});
@@ -16,15 +15,12 @@ class _SignInState extends State<SignIn> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        leading: Icon(Icons.arrow_back_ios),
-        title: Center(child: Text('Sign In')),
+        leading: const Icon(Icons.arrow_back_ios),
+        title: const Center(child: Text('Sign In')),
       ),
       body: Column(
         mainAxisAlignment: MainAxisAlignment.start,
         children: [
-          SizedBox(
-            height: 10.h,
-          ),
           Padding(
             padding: const EdgeInsets.all(5),
             child: Align(
@@ -60,26 +56,80 @@ class _SignInState extends State<SignIn> {
                   text: 'Password',
                 ),
               ),
+              SizedBox(
+                height: 10.h,
+              ),
               TextButton(
                 onPressed: () {},
-                child: Text('Forget Password?'),
+                child: const Text('Forget Password?'),
+              ),
+              SizedBox(
+                height: 10.h,
               ),
               CustomButton(
                 heigth: 50.h,
-                width: 300.w,
-                color: Color(0xFFEF9920),
+                width: 330.w,
+                color: const Color(0xFFEF9920),
                 text: 'SIGN IN',
                 onPressed: () {},
               ),
+              SizedBox(
+                height: 10.h,
+              ),
               Row(
+                mainAxisAlignment: MainAxisAlignment.spaceAround,
                 children: [
                   TextButton(
                     onPressed: () {},
                     child: Text('Don\'t have account?'),
-
                   ),
-                  
+                  TextButton(
+                    onPressed: () {},
+                    child: Text(
+                      'Create a new account',
+                      style: TextStyle(color: Colors.orange),
+                    ),
+                  ),
                 ],
+              ),
+              Text(
+                'Or',
+                style: TextStyle(color: Colors.black, fontSize: 20.sp),
+              ),
+              ElevatedButton.icon(
+                style: ElevatedButton.styleFrom(
+                  backgroundColor: Color(0xFF395998), // Facebook Blue
+                  minimumSize: Size(300, 50),
+                  shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(8),
+                  ),
+                ),
+                onPressed: () {
+                  // Add your Facebook login logic here
+                },
+                icon: Icon(Icons.facebook, color: Colors.white),
+                label: Text(
+                  "CONNECT WITH FACEBOOK",
+                  style: TextStyle(color: Colors.white, fontSize: 16),
+                ),
+              ),
+              SizedBox(height: 16),
+              ElevatedButton.icon(
+                style: ElevatedButton.styleFrom(
+                  backgroundColor: Color(0xFF395998), // Facebook Blue
+                  minimumSize: Size(300, 50),
+                  shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(8),
+                  ),
+                ),
+                onPressed: () {
+                  // Add your Facebook login logic here
+                },
+                icon: Icon(Icons.facebook, color: Colors.white),
+                label: Text(
+                  "CONNECT WITH FACEBOOK",
+                  style: TextStyle(color: Colors.white, fontSize: 16),
+                ),
               ),
             ],
           ),
