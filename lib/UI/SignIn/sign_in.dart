@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:foodapp/CustomWidget/custom_button.dart';
 import 'package:foodapp/CustomWidget/custom_text_field.dart';
+import 'package:foodapp/UI/ForgetPassword/forgot_password.dart';
+import 'package:get/get.dart';
 
 class SignIn extends StatefulWidget {
   const SignIn({super.key});
@@ -17,6 +19,7 @@ class _SignInState extends State<SignIn> {
       appBar: AppBar(
         leading: const Icon(Icons.arrow_back_ios),
         title: const Center(child: Text('Sign In')),
+        centerTitle: true,
       ),
       body: Column(
         mainAxisAlignment: MainAxisAlignment.start,
@@ -37,7 +40,7 @@ class _SignInState extends State<SignIn> {
               padding: const EdgeInsets.all(8.0),
               child: Text(
                 'Enter your Phone number or Email\naddresses for sign in.Enjoy your food:)',
-                style: TextStyle(color: Colors.black, fontSize: 18.sp),
+                style: TextStyle(color: Colors.black, fontSize: 18.sp,fontWeight: FontWeight.w300),
               ),
             ),
           ),
@@ -60,7 +63,9 @@ class _SignInState extends State<SignIn> {
                 height: 10.h,
               ),
               TextButton(
-                onPressed: () {},
+                onPressed: () {
+                  Get.to(ForgotPasword());
+                },
                 child: const Text('Forget Password?'),
               ),
               SizedBox(
@@ -98,15 +103,13 @@ class _SignInState extends State<SignIn> {
               ),
               ElevatedButton.icon(
                 style: ElevatedButton.styleFrom(
-                  backgroundColor: Color(0xFF395998), // Facebook Blue
+                  backgroundColor: Color(0xFF395998),
                   minimumSize: Size(300, 50),
                   shape: RoundedRectangleBorder(
                     borderRadius: BorderRadius.circular(8),
                   ),
                 ),
-                onPressed: () {
-                  // Add your Facebook login logic here
-                },
+                onPressed: () {},
                 icon: Icon(Icons.facebook, color: Colors.white),
                 label: Text(
                   "CONNECT WITH FACEBOOK",
@@ -116,15 +119,13 @@ class _SignInState extends State<SignIn> {
               SizedBox(height: 16),
               ElevatedButton.icon(
                 style: ElevatedButton.styleFrom(
-                  backgroundColor: Color(0xFF395998), // Facebook Blue
+                  backgroundColor: Color(0xFF395998),
                   minimumSize: Size(300, 50),
                   shape: RoundedRectangleBorder(
                     borderRadius: BorderRadius.circular(8),
                   ),
                 ),
-                onPressed: () {
-                  // Add your Facebook login logic here
-                },
+                onPressed: () {},
                 icon: Icon(Icons.facebook, color: Colors.white),
                 label: Text(
                   "CONNECT WITH FACEBOOK",
