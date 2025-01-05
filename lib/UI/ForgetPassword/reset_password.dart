@@ -20,18 +20,18 @@ class _ResetPasswordState extends State<ResetPassword> {
               Get.back();
             },
             child: const Icon(Icons.arrow_back_ios)),
-        title: const Center(child: Text('Forgot Password')),
+        title: const Center(child: Text('Forgot Password')), 
         centerTitle: true,
       ),
       body: Column(
         children: [
           Padding(
-            padding: const EdgeInsets.all(5),
+            padding: const EdgeInsets.all(15),
             child: Align(
               alignment: Alignment.topLeft,
               child: Text(
                 'Reset email sent',
-                style: TextStyle(color: Colors.black, fontSize: 30.sp),
+                style: TextStyle(color: Colors.black, fontSize: 4s0.sp),
               ),
             ),
           ),
