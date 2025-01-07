@@ -31,7 +31,7 @@ class _ResetPasswordState extends State<ResetPassword> {
               alignment: Alignment.topLeft,
               child: Text(
                 'Reset email sent',
-                style: TextStyle(color: Colors.black, fontSize: 4s0.sp),
+                style: TextStyle(color: Colors.black, fontSize: 40.sp),
               ),
             ),
           ),
