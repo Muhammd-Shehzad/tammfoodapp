@@ -11,6 +11,7 @@ void main() {
       splitScreenMode: true,
       minTextAdapt: true,
       builder: (context, child) => const GetMaterialApp(
+         debugShowCheckedModeBanner: false,
         home: WelcomScreen(),
         // SignIn()
       ),
