@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:foodapp/CustomWidget/center_text.dart';
 import 'package:foodapp/CustomWidget/custom_button.dart';
 import 'package:foodapp/CustomWidget/custom_row.dart';
 import 'package:foodapp/UI/WelcomScreen/page_view3.dart';
@@ -34,19 +35,9 @@ class PageView2 extends StatelessWidget {
                     fontSize: 25.sp,
                     fontWeight: FontWeight.bold),
               ),
-              Padding(
-                padding: const EdgeInsets.all(15),
-                child: Align(
-                  alignment: Alignment.center,
-                  child: Text(
+              CenterText(
+                text1:
                     'Order from the best local resturants with easy ,on-demand delivery',
-                    textAlign: TextAlign.center,
-                    style: TextStyle(
-                        color: Colors.black,
-                        fontSize: 18.sp,
-                        fontWeight: FontWeight.w300),
-                  ),
-                ),
               ),
               CustomButton(
                 heigth: 50.h,
@@ -54,8 +45,7 @@ class PageView2 extends StatelessWidget {
                 color: const Color(0xFFEF9920),
                 text: 'GET STARTED',
                 onPressed: () {
-                                    Get.to(PageView3());
-
+                  Get.to(PageView3());
                 },
               ),
             ],

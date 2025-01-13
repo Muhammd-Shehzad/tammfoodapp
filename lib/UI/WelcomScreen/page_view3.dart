@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:foodapp/CustomWidget/center_text.dart';
 import 'package:foodapp/CustomWidget/custom_button.dart';
 import 'package:foodapp/CustomWidget/custom_row.dart';
 import 'package:foodapp/UI/WelcomScreen/page_view4.dart';
@@ -34,19 +35,9 @@ class PageView3 extends StatelessWidget {
                     fontSize: 25.sp,
                     fontWeight: FontWeight.bold),
               ),
-              Padding(
-                padding: const EdgeInsets.all(15),
-                child: Align(
-                  alignment: Alignment.center,
-                  child: Text(
+              CenterText(
+                text1:
                     'Free delivery for new customers via Apple Play and others payment methods.',
-                    textAlign: TextAlign.center,
-                    style: TextStyle(
-                        color: Colors.black,
-                        fontSize: 18.sp,
-                        fontWeight: FontWeight.w300),
-                  ),
-                ),
               ),
               SizedBox(
                 height: 20.w,

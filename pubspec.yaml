@@ -39,6 +39,8 @@ dependencies:
   http: ^1.2.2
   flutter_screenutil: ^5.9.3
   smooth_page_indicator: ^1.2.0+3
+  country_code_picker: ^3.1.0
+  flutter_otp_text_field: ^1.4.0+2
 
 dev_dependencies:
   flutter_test:
