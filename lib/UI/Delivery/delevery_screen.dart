@@ -16,7 +16,7 @@ class _DeleveryScreenState extends State<DeleveryScreen> {
         children: [
           Center(
               child: Text(
-            'DELEVERY TO shoping ',
+            'DELEVERY TO',
             style: TextStyle(color: Color(0xFFEF9920)),
           ),),
         ],
