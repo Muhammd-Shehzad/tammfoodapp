@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:foodapp/UI/SignIn/sign_in.dart';
 import 'package:foodapp/UI/WelcomScreen/welcom_screen.dart';
 import 'package:get/get.dart';
 
