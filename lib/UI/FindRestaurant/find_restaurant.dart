@@ -1,10 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:foodapp/CustomWidget/center_text.dart';
-import 'package:foodapp/CustomWidget/custom_button.dart';
-import 'package:foodapp/CustomWidget/custom_text_field.dart';
+
 import 'package:foodapp/UI/Delivery/delevery_screen.dart';
-import 'package:foodapp/UI/OTP/otp.dart';
 import 'package:get/get.dart';
 
 class FindRestaurant extends StatefulWidget {
